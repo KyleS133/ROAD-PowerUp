@@ -12,7 +12,6 @@ window.TrelloPowerUp.initialize({
                     title: "ROAD Operations",
 
                     url: "./index.html",
-
                     height: 420
 
                 });
