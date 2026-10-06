@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     };
 
-    function openLink(id, url) {
+    function attachButton(id, url) {
 
         const button = document.getElementById(id);
 
@@ -25,17 +25,19 @@ document.addEventListener("DOMContentLoaded", function () {
             e.preventDefault();
 
             if (url !== "#") {
-                window.open(url, "_blank");
+                window.open(url, "_blank", "noopener,noreferrer");
+            } else {
+                alert("Coming Soon");
             }
 
         });
 
     }
 
-    openLink("dashboard", links.dashboard);
-    openLink("operations", links.operations);
-    openLink("receiving", links.receiving);
-    openLink("repair", links.repair);
-    openLink("attention", links.attention);
+    attachButton("dashboard", links.dashboard);
+    attachButton("operations", links.operations);
+    attachButton("receiving", links.receiving);
+    attachButton("repair", links.repair);
+    attachButton("attention", links.attention);
 
 });
