@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         dashboard: "https://app.powerbi.com/links/8x0b1V4H-5?ctid=a433be3d-5ba0-4873-a173-a72aee7c225d&pbi_source=linkShare",
 
-        operations: "#",
+        operations: "https://app.powerbi.com/groups/me/reports/0921b335-11d2-4e82-bfeb-b53cd5991717/fea025b939ccd76e7ea8?ctid=a433be3d-5ba0-4873-a173-a72aee7c225d&experience=power-bi",
 
-        receiving: "#",
+        receiving: "https://app.powerbi.com/groups/me/reports/0921b335-11d2-4e82-bfeb-b53cd5991717/c94ad2e92a93135a2341?ctid=a433be3d-5ba0-4873-a173-a72aee7c225d&experience=power-bi",
 
-        repair: "#",
+        repair: "https://app.powerbi.com/groups/me/reports/0921b335-11d2-4e82-bfeb-b53cd5991717/1be1c83cc0040626b577?ctid=a433be3d-5ba0-4873-a173-a72aee7c225d&experience=power-bi",
 
-        attention: "#"
+        attention: "https://app.powerbi.com/groups/me/reports/0921b335-11d2-4e82-bfeb-b53cd5991717/772dd2a43d66b4048611?ctid=a433be3d-5ba0-4873-a173-a72aee7c225d&experience=power-bi"
 
     };
 
@@ -24,11 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             e.preventDefault();
 
-            if (url !== "#") {
-                window.open(url, "_blank", "noopener,noreferrer");
-            } else {
-                alert("Coming Soon");
-            }
+            window.open(url, "_blank", "noopener,noreferrer");
 
         });
 
@@ -39,5 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     attachButton("receiving", links.receiving);
     attachButton("repair", links.repair);
     attachButton("attention", links.attention);
+
+});
 
 });
