@@ -1,22 +1,26 @@
 window.TrelloPowerUp.initialize({
 
-  "board-buttons": function (t) {
+    "board-buttons": function (t) {
 
-    return [{
-      text: "🚀 ROAD",
+        return [{
+            text: "🚀 ROAD",
 
-      callback: function (t) {
+            callback: function (t) {
 
-        return t.popup({
-          title: "ROAD Operations",
-          url: "./index.html",
-          height: 420
-        });
+                return t.popup({
 
-      }
+                    title: "ROAD Operations",
 
-    }];
+                    url: "./index.html",
 
-  }
+                    height: 420
+
+                });
+
+            }
+
+        }];
+
+    }
 
 });
