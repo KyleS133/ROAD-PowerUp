@@ -1,24 +1,10 @@
-window.TrelloPowerUp.initialize({
+document.getElementById("dashboard").onclick = function (e) {
 
-    'board-buttons': function (t) {
+    e.preventDefault();
 
-        return [{
-            text: '🚀 ROAD',
+    window.open(
+        "https://app.powerbi.com/links/8x0b1V4H-5?ctid=a433be3d-5ba0-4873-a173-a72aee7c225d&pbi_source=linkShare",
+        "_blank"
+    );
 
-            callback: function (t) {
-
-                return t.popup({
-
-                    title: 'ROAD Operations',
-
-                    url: './index.html'
-
-                });
-
-            }
-
-        }];
-
-    }
-
-});
+};
