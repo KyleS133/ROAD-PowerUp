@@ -1,19 +1,24 @@
-document.getElementById("dashboard").onclick = function () {
-    alert("Executive Dashboard link goes here.");
-};
+window.TrelloPowerUp.initialize({
 
-document.getElementById("operations").onclick = function () {
-    alert("Operations Control Center link goes here.");
-};
+    'board-buttons': function (t) {
 
-document.getElementById("receiving").onclick = function () {
-    alert("Receiving Operations link goes here.");
-};
+        return [{
+            text: '🚀 ROAD',
 
-document.getElementById("repair").onclick = function () {
-    alert("Repair Operations link goes here.");
-};
+            callback: function (t) {
 
-document.getElementById("attention").onclick = function () {
-    alert("Needs Attention link goes here.");
-};
+                return t.popup({
+
+                    title: 'ROAD Operations',
+
+                    url: './index.html'
+
+                });
+
+            }
+
+        }];
+
+    }
+
+});
