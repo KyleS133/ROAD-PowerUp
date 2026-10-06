@@ -1,0 +1,13 @@
+{
+  "name": "ROAD Operations",
+  "description": "ROAD Operations Management System",
+  "author": "Kyle Snyder",
+  "capabilities": [
+    "board-buttons"
+  ],
+  "connectors": {
+    "iframe": {
+      "url": "https://kyles133.github.io/ROAD-PowerUp/index.html"
+    }
+  }
+}
