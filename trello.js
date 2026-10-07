@@ -1,27 +1,22 @@
 window.TrelloPowerUp.initialize({
 
-    "board-buttons": function (t) {
+  "board-buttons": function (t) {
 
-        return [{
+    return [{
+      text: "🚀 Team Tools",
 
-            text: "🚀 ROAD",
+      callback: function (t) {
 
-            callback: function (t) {
+        return t.popup({
+          title: "🚀 Refurbishment Team Tools",
+          url: "./index.html",
+          height: 300
+        });
 
-                return t.popup({
+      }
 
-                    title: "ROAD",
+    }];
 
-                    url: "./index.html",
-
-                    height: 180
-
-                });
-
-            }
-
-        }];
-
-    }
+  }
 
 });
