@@ -1,9 +1,9 @@
 body{
     margin:0;
-    padding:10px;
+    padding:12px;
     background:#1f1f1f;
     font-family:"Segoe UI",Arial,sans-serif;
-    color:white;
+    color:#ffffff;
 }
 
 .container{
@@ -14,21 +14,31 @@ body{
 
 .logo{
     width:48px;
-    margin-bottom:4px;
+    margin-bottom:6px;
 }
 
 h1{
     margin:2px 0;
     color:#4DA3FF;
-    font-size:21px;
+    font-size:22px;
     font-weight:700;
     letter-spacing:2px;
 }
 
 .subtitle{
-    color:#C6C6C6;
+    color:#C8C8C8;
     font-size:13px;
-    margin-bottom:12px;
+    margin-bottom:10px;
+    font-style:italic;
+}
+
+.divider{
+    width:90%;
+    height:2px;
+    margin:0 auto 16px auto;
+    background:#0078D4;
+    border-radius:2px;
+    opacity:.65;
 }
 
 .button{
@@ -36,20 +46,24 @@ h1{
     text-decoration:none;
     background:#0078D4;
     color:white;
-    padding:9px;
-    margin-bottom:6px;
+    padding:10px;
+    margin-bottom:8px;
     border-radius:8px;
     font-size:14px;
     font-weight:600;
-    transition:0.18s;
+    transition:all .18s ease;
+    box-shadow:0 2px 6px rgba(0,0,0,.35);
 }
 
 .button:hover{
-    background:#005A9E;
+    background:#1890FF;
+    transform:translateY(-1px);
+    box-shadow:0 6px 14px rgba(0,0,0,.40);
 }
 
 .footer{
-    margin-top:10px;
-    color:#7E7E7E;
+    margin-top:12px;
+    color:#7f7f7f;
     font-size:10px;
+    letter-spacing:.5px;
 }
